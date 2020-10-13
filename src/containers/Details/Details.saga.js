@@ -6,7 +6,7 @@ function* getMovieDetails(action) {
   let response;
   try {
     const { movieId } = action.data;
-    const url = `http://www.omdbapi.com/?i=${movieId}&apikey=a07e499a`
+    const url = `https://www.omdbapi.com/?i=${movieId}&apikey=a07e499a`
     response = yield call(getData, url);
     if (response.data && response.data.Response) {
       yield put({

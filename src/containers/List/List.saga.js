@@ -9,7 +9,7 @@ function* getMovies(action) {
   try {
     const { searchType,searchStr } = action.payload;
     let seType = searchType === ALL.toLowerCase() ? '' : `&type=${searchType}`
-    const url = `http://www.omdbapi.com/?s=${searchStr}${seType}&apikey=a07e499a`
+    const url = `https://www.omdbapi.com/?s=${searchStr}${seType}&apikey=a07e499a`
     response = yield call(getData, url);
     const data = response.data
     if (data.Response !== "False") {
@@ -37,7 +37,7 @@ function* getMoviesWithId(action) {
     
     let allReq = []
     for(let each of payload){
-      const url = `http://www.omdbapi.com/?i=${each}&apikey=a07e499a`
+      const url = `https://www.omdbapi.com/?i=${each}&apikey=a07e499a`
       allReq.push(call(getData,url))
     }
     response = yield all(allReq)
