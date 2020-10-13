@@ -1,0 +1,55 @@
+.card{
+    border: 1px solid rgb(189, 180, 180);
+    box-shadow: 3px 3px 7px 0px rgb(197, 186, 186);
+    &:hover{
+        box-shadow: 4px 3px 7px 5px rgb(197, 186, 186);
+        cursor: pointer;
+    }
+}
+
+.movie-poster{
+    vertical-align: middle;
+    border: 0;
+    width: 170px;
+    height: 200px;
+}
+
+.movie-pcard{
+    border-radius: 4px;
+    text-align: left;
+    width: 170px;
+    height: 200px;
+}
+
+.movie-dcard{
+    align-content: flex-start;
+}
+
+.title{
+    font-size: 12px;
+    font-weight: bold;
+    word-break: break-all;;
+    padding:0.5rem;
+    padding-bottom:0px;
+    margin: 0px;
+}
+
+.year{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.fav-icon{
+    font-size:1rem;
+    color: blue;
+}
+
+.fav{
+    color: red;
+}
+
+.unfav{
+    color: red;
+}
